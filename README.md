@@ -117,3 +117,104 @@ Regression      Tree           Forest
        Recall / F1 Score
                  ↓
        Final Model Selection
+
+⚙️ Train-Test Split
+
+The dataset was divided using an 80:20 train-test split.
+
+Training records: 247
+Testing records: 62
+random_state = 42
+
+The same test set was used to evaluate all three models.
+
+🤖 Machine Learning Models
+1. Logistic Regression
+
+Logistic Regression was used as a baseline classification model for predicting the binary target variable.
+
+2. Decision Tree
+
+A Decision Tree classifier was trained to learn decision rules from the patient features.
+
+3. Random Forest
+
+Random Forest combines multiple decision trees to produce a more robust classification model.
+
+It was selected as the final model after comparing the performance of all three algorithms.
+
+📊 Model Results
+Model	Accuracy	Precision	Recall	F1 Score
+Logistic Regression	96.77%	98.33%	98.33%	98.33%
+Decision Tree	95.16%	98.31%	96.67%	97.48%
+Random Forest	96.77%	98.33%	98.33%	98.33%
+Accuracy Comparison
+
+Overall Model Performance
+
+🔍 Confusion Matrices
+
+Confusion matrices were generated separately for all three classification models to examine correct and incorrect predictions.
+
+🌲 Random Forest Feature Importance
+
+Feature importance was analyzed using the Random Forest model to identify which features contributed most to the model's predictions.
+
+🏆 Final Model
+
+Random Forest was selected as the final model.
+
+Final Accuracy
+
+96.77%
+
+The Random Forest model achieved the highest tied accuracy along with Logistic Regression while providing an ensemble-based approach using multiple decision trees.
+
+🛠️ Technologies Used
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Scikit-learn
+Google Colab
+Jupyter Notebook
+📁 Project Structure
+lung-cancer-detection-ml/
+│
+├── Lung_Cancer_Detection_ML.ipynb
+├── LUNG CANCER DETECTION PBL_ML 251.docx
+├── README.md
+├── requirements.txt
+│
+└── images/
+    ├── confusionmatrix.png
+    ├── correlationheatmap.png
+    ├── modelaccuracycomparison.png
+    ├── modelperformancecomparison.png
+    └── randomforestfeatureimportance.png
+▶️ How to Run
+1. Clone the repository
+git clone https://github.com/dev-adityap/lung-cancer-detection-ml.git
+2. Install dependencies
+pip install -r requirements.txt
+3. Open the notebook
+
+Open:
+
+Lung_Cancer_Detection_ML.ipynb
+
+The notebook can be executed using Jupyter Notebook or Google Colab.
+
+📌 Key Takeaways
+The project demonstrates a complete supervised machine learning workflow.
+Three classification algorithms were compared.
+Logistic Regression and Random Forest achieved 96.77% accuracy.
+Decision Tree achieved 95.16% accuracy.
+Random Forest was selected as the final model.
+Multiple evaluation metrics were used instead of relying only on accuracy.
+👨‍💻 Author
+
+Aditya Panna
+
+B.Tech Computer Science & Engineering
